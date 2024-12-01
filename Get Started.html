@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beautiful of Bali - Get Started</title>
+    <link rel="stylesheet" href="Get Started-stye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Decol:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-1">
+    <!-- Header section -->
+    <nav>
+        <!-- For desktop -->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="/Images/Close.svg" alt=""></a></li>
+            <li><a href="/Destination.html">Destinations</a></li>
+            <li><a href="/Information.html">About Us</a></li>
+            <li><a href="/Information.html">Contact Us</a></li>
+        </ul>
+         <!-- For mobile -->
+        <ul>
+            <li><a href="/index.html"><img src="/Images/Logo.svg" alt="" class="logo"></a></li>
+            <li class="hideOnMobile"><a href="/Destination.html">Destinations</a></li>
+            <li class="hideOnMobile"><a href="/Information.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="/Information.html">Contact Us</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="/Images/Menu.svg" alt=""></a></li>
+        </ul>
+    </nav>
+    <!-- End Header -->
+        <div class="content">
+            <h1>Magical of Bali</h1>
+            <p>
+                There’s no other place like Bali in this world.
+                A magical blend of culture, people, nature, activities, culinary delights and much more.
+                Whatever your age, background, budget or interest,
+                there’s something great for everyone to explore and discover.
+                And that’s a promise.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="content">
+            <h1>With Hindunese Culture</h1>
+            <p>
+                Hinduism, the third-largest religion in Indonesia, has a long history in Indonesia.
+                Today, the island of Bali is famous for its unique Balinese Hindu culture.
+            </p>
+        </div>
+    </div> 
+
+    <div class="container-3">
+        <div class="content">
+            <h1>With Thousands of Destinations</h1>
+            <p>
+                Bali packs a lot into one small island - from breathtaking waterfalls like Sekumpul
+                in the north to the white sand beaches of Nyang Nyang in the south.
+            </p>
+            <a href="/Destination.html"><button type="button">Discover More</button></a>
+        </div>
+    </div>
+
+    <div class="container-4">
+        <div class="content">
+            <h1>What are you waiting for?</h1>
+            <p>Discover Bali's Beauty Now.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="/index.html"><img src="/Images/Logo.svg" alt=""></a>
+        <p>FOLLOW US ON</p>
+        <div class="social-icons">
+            <a href="#"><img src="/Images/Facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="/Images/Instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="/Images/WhatsApp.svg" alt="WhatsApp"></a>
+        </div>
+        <p id="credit">Made with &#60&#51 by Stefano.</p>
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
