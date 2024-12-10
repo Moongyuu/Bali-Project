@@ -71,7 +71,7 @@ nav li:first-child{
 /* Main Section */
 body {
     min-height: 100vh;
-    background-image: url('Images/main-bg.jpg');
+    background-image: url('./Images/main-bg.jpg');
     background-size: cover;
     background-position: center;
 }
