@@ -322,15 +322,6 @@ nav li:first-child{
 
 
 /* Responsive layout for content */
-@media(max-width: 1020px){
-    .slider .list .item .content .desc {
-        max-width: 80%;
-    }
-}
-
-
-
-
 @media(max-width: 800px){
     .slider .list .item .content{
         top: 120px;
@@ -356,6 +347,5 @@ nav li:first-child{
     }
     .slider .list .item .content .desc {
         font-size: 10px;
-        max-width: 55%;
     }
 }

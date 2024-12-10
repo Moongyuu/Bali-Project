@@ -90,7 +90,7 @@ p {
 /* 1st Image section */
 .container-1 {
     min-height: 100vh;
-    background-image: url(./Images/2-1bg.jpg);
+    background-image: url(/Images/2-1bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -100,15 +100,13 @@ p {
     margin-left: 70px;
 }
 
-.container-1 .content p{
-    max-width: 55%;
-}
+
 /* End of 1st Image section */
 
 /* 2nd image section */
 .container-2 {
     min-height: 100vh;
-    background-image: url(./Images/2-2bg.jpg);
+    background-image: url(/Images/2-2bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -122,22 +120,18 @@ p {
     text-align: right;
 }
 
-.container-2 .content p {
-    max-width: 55%;
-}
 /* End of 2nd image section */
 
 /* 3rd image section */
 .container-3 {
     min-height: 100vh;
-    background-image: url(./Images/2-3bg.jpg);
+    background-image: url(/Images/2-3bg.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .container-3 .content {
     padding-top: 155px;
-    max-width: 55%;
     padding-left: 70px;
 }
 .container-3 button {
@@ -166,7 +160,7 @@ p {
 /* 4th image section */
 .container-4 {
     min-height: 100vh;
-    background-image: url(./Images/2-4bg.jpg);
+    background-image: url(/Images/2-4bg.jpg);
     background-size: cover;
     background-position: center top;
 }
