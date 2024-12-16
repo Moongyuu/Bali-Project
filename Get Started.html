@@ -90,6 +90,62 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+
+        function adjustContent() {
+            const content1 = document.querySelector('.container-1 .content p');
+            const content2 = document.querySelector('.container-2 .content p');
+            const content3 = document.querySelector('.container-3 .content p');
+            if (window.innerWidth <= 420) {
+                content1.innerHTML = `
+                <p>
+                There’s no other place like Bali in this world. <br>
+                A magical blend of culture, people, nature, activities, <br>
+                culinary delights and much more. Whatever your age, background, <br>
+                budget or interest, there’s something great for everyone to explore and discover. <br>
+                And that’s a promise.
+                </p>
+                `;
+            }
+            
+            if (window.innerWidth <=393) {
+                content1.innerHTML = `
+                <p>
+                There’s no other place like Bali in this world. <br>
+                A magical blend of culture, people, nature, activities, <br>
+                culinary delights and much more. Whatever your age, background, <br>
+                budget or interest, there’s something great for everyone to explore and discover. And that’s a promise.
+                </p>
+                `;
+
+                content2.innerHTML = `
+                <p>
+                    Hinduism, the third-largest religion in Indonesia, <br>
+                    has a long history in Indonesia. <br> 
+                    Today, the island of Bali is famous for its unique Balinese Hindu culture.
+                </p>
+                `;
+
+                content3.innerHTML = `
+                <p>
+                    Bali packs a lot into one small island - <br>
+                    from breathtaking waterfalls like Sekumpul in the north <br>
+                    to the white sand beaches of Nyang Nyang in the south.
+                </p>
+            `;
+            }
+
+            if (window.innerWidth <= 329) {
+                content1.innerHTML = `
+                <p>
+                There’s no other place like Bali in this world. <br>
+                A magical blend of culture, people, nature, activities, <br>
+                culinary delights and much more. Whatever your age, background, budget or interest, there’s something great for everyone to explore and discover. And that’s a promise.
+                </p>
+                `;
+            }
+        }
+        adjustContent();
+        window.addEventListener('resize', adjustContent);
     </script>
 </body>
 </html>
